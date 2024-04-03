@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+
+body {
+  background: url('./img/fundo/cielo-estrellado 7.svg');
+  background-size: cover;
+}
+
+.logo {
+  width: 500px;
+}
+
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 24px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #87F54E;
+  text-shadow: black;
+  padding-left: 10px;
+  border-radius: 30em;
+}
+
+.borda_texto{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+   color: blackclea;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 100px;
+}
+
+nav {
+  display: flex;
+  margin: 30px;
+}
+
+header {
+  margin: 8px;
+}
