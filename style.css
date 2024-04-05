@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 
 body {
-  background: url('./img/fundo/cielo-estrellado 7.svg');
+  background: url("./img/fundo/cielo-estrellado 7.svg");
   background-size: cover;
 }
 
 .logo {
-  width: 500px;
+  width: 450px;
 }
 
 ul,
@@ -23,23 +22,21 @@ li {
 
 a {
   text-decoration: none;
-  color: #87F54E;
-  text-shadow: black;
+  color: #87f54e;
   padding-left: 10px;
   border-radius: 30em;
 }
 
-.borda_texto{
-  -webkit-text-stroke-width: 1px;
+.borda_texto {
+  -webkit-text-stroke-width: 0.25px;
   -webkit-text-stroke-color: #000;
-   color: blackclea;
 }
 
 header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
 }
 
 .menu {
@@ -57,4 +54,126 @@ nav {
 
 header {
   margin: 8px;
+}
+
+.planets {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.images-1,
+.images-2,
+.images-3,
+.images-4,
+.images-5,
+.images-6,
+.images-7,
+.images-8,
+.images-9,
+.images-10,
+.images-11,
+.images-12,
+.images-13,
+.images-14,
+.images-15 {
+  position: absolute;
+}
+
+.images-1 {
+  top: 225px;
+  left: 82px;
+}
+
+.images-2 {
+  top: 300px;
+  left: 400px;
+}
+
+.images-3 {
+  top: 140px;
+  left: 620px;
+}
+
+.images-4 {
+  top: 200px;
+  left: 890px;
+}
+
+.images-5 {
+  top: 150px;
+  right: 50px;
+}
+
+.images-6 {
+  top: 550px;
+  left: 40px;
+}
+
+.images-7 {
+  top: 500px;
+  left: 300px;
+}
+
+.images-8 {
+  top: 380px;
+  left: 520px;
+}
+
+.images-9 {
+  top: 450px;
+  right: 350px;
+}
+
+.images-10 {
+  top: 250px;
+  right: 50px;
+}
+
+.images-11 {
+  top: 800px;
+  left: 90px;
+  bottom: 200px;
+}
+
+.images-12 {
+  top: 670px;
+  left: 280px;
+}
+
+.images-13 {
+  top: 660px;
+  left: 620px;
+}
+
+.images-14 {
+  top: 800px;
+  right: 430px;
+}
+
+.images-15 {
+  top: 700px;
+  right: 180px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #272727;
+}
+
+.menu-footer {
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.footerzim {
+  display: flex;
+  justify-content: space-between;
+}
+
+.git {
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
 }
