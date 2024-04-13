@@ -8,6 +8,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  margin-bottom:0%;
 }
 
 img {
@@ -84,13 +85,30 @@ strong {
   align-items: center;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat( 5, 1fr);
+  padding: 50px;
+  gap: 90px;
+}
+ 
+.Vector {
+  height: 90px;
+}
+
+.cards,
+.Vector {
+  display: flex;
+  align-items: center;
+}
+
+
 footer {
   height: 115px;
   display: flex;
   background: #272727;
   color: white;
   font-family: "IBM Plex Mono", monospace;
-  margin-top: auto;
 }
 
 .menu,
@@ -139,10 +157,4 @@ footer {
   border-left: white 1px solid;
 }
 
-@media screen and (max-height: 1000px) {
-  footer {
-    position: relative;
-    width: 100%;
-    transform: translate(0px, 300px);
-  }
-}
+

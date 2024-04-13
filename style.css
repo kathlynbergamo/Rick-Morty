@@ -3,6 +3,17 @@
 body {
   background: url("./img/fundo/cielo-estrellado 7.svg");
   background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 .logo {
@@ -11,13 +22,13 @@ body {
 
 ul,
 li {
-  margin: 0px;
-  padding: 0px;
+  font-family: "IBM Plex Mono", monospace;
   list-style: none;
   font-size: 24px;
-  font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
   font-style: normal;
+  margin: 0px;
+  padding: 0px;
 }
 
 a {
@@ -52,13 +63,10 @@ nav {
   margin: 30px;
 }
 
-header {
-  margin: 8px;
-}
-
 .planets {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  height: 50vh;
 }
 
 .images-1,
@@ -80,12 +88,12 @@ header {
 }
 
 .images-1 {
-  top: 225px;
+  top: 100px;
   left: 82px;
 }
 
 .images-2 {
-  top: 300px;
+  top: 260px;
   left: 400px;
 }
 
@@ -95,27 +103,27 @@ header {
 }
 
 .images-4 {
-  top: 200px;
+  top: 180px;
   left: 890px;
 }
 
 .images-5 {
-  top: 150px;
+  top: 120px;
   right: 50px;
 }
 
 .images-6 {
-  top: 550px;
+  top: 450px;
   left: 40px;
 }
 
 .images-7 {
-  top: 500px;
+  top: 400px;
   left: 300px;
 }
 
 .images-8 {
-  top: 380px;
+  top: 360px;
   left: 520px;
 }
 
@@ -125,18 +133,18 @@ header {
 }
 
 .images-10 {
-  top: 250px;
-  right: 50px;
+  top: 230px;
+  right: 70px;
 }
 
 .images-11 {
-  top: 800px;
+  top: 720px;
   left: 90px;
   bottom: 200px;
 }
 
 .images-12 {
-  top: 670px;
+  top: 610px;
   left: 280px;
 }
 
@@ -146,7 +154,7 @@ header {
 }
 
 .images-14 {
-  top: 800px;
+  top: 780px;
   right: 430px;
 }
 
@@ -155,15 +163,23 @@ header {
   right: 180px;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #272727;
+main {
+  flex-grow: 1;
 }
 
+footer {
+  height: 115px;
+  display: flex;
+  background: #272727;
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
+  margin-top: auto;
+}
+
+.menu,
 .menu-footer {
+  font-size: 20px;
+  justify-content: space-evenly;
   color: white;
   font-family: "IBM Plex Mono", monospace;
 }
@@ -173,7 +189,35 @@ footer {
   justify-content: space-between;
 }
 
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
 .git {
+  display: flex;
+  flex-direction: column;
   color: white;
   font-family: "IBM Plex Mono", monospace;
+  justify-content: center;
+}
+
+.logo-git {
+  display: flex;
+  justify-content: space-around;
+}
+
+.border {
+  display: flex;
+  align-items: center;
+  height: 80%;
+  border-left: white 1px solid;
+}
+
+@media screen and (max-height: 1000px) {
+  footer {
+    position: relative;
+    width: 100%;
+    transform: translate(0px, 300px);
+  }
 }
