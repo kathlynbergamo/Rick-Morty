@@ -50,11 +50,14 @@ header {
   align-items: center;
 }
 
-.menu {
+.menu,
+.menu-inferior {
   display: flex;
 }
 
-.menu li {
+.menu,
+.menu-inferior,
+li {
   margin-left: 100px;
 }
 
@@ -168,6 +171,7 @@ main {
 }
 
 footer {
+  display: auto;
   height: 115px;
   display: flex;
   background: #272727;
@@ -219,5 +223,13 @@ footer {
     position: relative;
     width: 100%;
     transform: translate(0px, 300px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu,
+  .menu-respon {
+    display: none;
+    background: url(./img/logo/menu.png);
   }
 }
