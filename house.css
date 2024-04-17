@@ -8,7 +8,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  margin-bottom:0%;
+  margin-bottom: 0%;
 }
 
 img {
@@ -46,25 +46,36 @@ a {
 
 header {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.menu,
+.menu {
+  display: flex;
+  gap: 100px;
+}
+
+.logo-menu {
+  display: none;
+}
+
 .menu-inferior {
   display: flex;
 }
 
 .menu,
- .menu-inferior li {
-  margin-left: 100px;
+.menu-inferior li {
+  margin-left: 80px;
   list-style: none;
 }
 
 nav {
   display: flex;
   margin: 30px;
+}
+
+.images-10-res {
+  display: none;
 }
 
 .images-10,
@@ -89,13 +100,17 @@ strong {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat( 5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   padding: 50px;
   gap: 90px;
 }
- 
+
 .Vector {
   height: 90px;
+}
+
+.Vector-mob {
+  display: none;
 }
 
 .cards,
@@ -104,7 +119,6 @@ strong {
   align-items: center;
 }
 
-
 footer {
   height: 115px;
   display: flex;
@@ -112,6 +126,12 @@ footer {
   color: white;
   font-family: "IBM Plex Mono", monospace;
   margin-top: auto;
+}
+
+.footerzim-link {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .menu-inferior,
@@ -132,12 +152,12 @@ footer {
 
 .footerzim {
   display: flex;
-  justify-content: space-between;
 }
 
 .footer-logo {
   display: flex;
   align-items: center;
+  padding-left: 20px;
 }
 
 .git {
@@ -146,6 +166,10 @@ footer {
   color: white;
   font-family: "IBM Plex Mono", monospace;
   justify-content: center;
+}
+
+.git p {
+  margin-top: 0;
 }
 
 .logo-git {
@@ -160,3 +184,127 @@ footer {
   border-left: white 1px solid;
 }
 
+@media (max-width: 376px) {
+  body {
+    width: 475px;
+  }
+
+  header {
+    justify-content: space-evenly;
+  }
+
+  .logo {
+    width: 343px;
+  }
+
+  .menu,
+  .menu-respon {
+    display: none;
+  }
+
+  .logo-menu {
+    display: block;
+  }
+
+  .section {
+    width: 475px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .images-10 {
+    display: none;
+  }
+
+  .images-10-res {
+    display: block;
+    width: 200px;
+    height: 200px;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .rick2,
+  .rick3 {
+    display: none;
+  }
+
+  footer {
+    margin-top: 40px;
+    width: 475px;
+    height: auto;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .footerzim-link {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerzim-link .border {
+    border: 0;
+  }
+
+  .menu-inferior {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .menu-inferior a {
+    padding: 0px;
+  }
+
+  .menu-inferior li,
+  .menu-inferior ul,
+  .border {
+    margin: 0;
+  }
+
+  ul.menu-inferior {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .git {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .git p {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .logo-git {
+    gap: 10px;
+  }
+
+  .vectors-mob {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  .Vector {
+    display: none;
+  }
+
+  .Vector-mob {
+    display: block;
+  }
+
+  nav.border {
+    display: flex;
+    justify-content: center;
+  }
+}

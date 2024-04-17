@@ -45,7 +45,6 @@ a {
 
 header {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -58,7 +57,12 @@ header {
 .menu,
 .menu-inferior,
 li {
-  margin-left: 100px;
+  margin-left: 30px;
+  gap: 20px;
+}
+
+.logo-menu {
+  display: none;
 }
 
 nav {
@@ -190,12 +194,18 @@ footer {
 
 .footerzim {
   display: flex;
+}
+
+.footerzim-link {
+  display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .footer-logo {
   display: flex;
   align-items: center;
+  padding-left: 20px;
 }
 
 .git {
@@ -214,22 +224,188 @@ footer {
 .border {
   display: flex;
   align-items: center;
-  height: 80%;
   border-left: white 1px solid;
+}
+
+.git p {
+  margin-top: 0;
 }
 
 @media screen and (max-height: 1000px) {
   footer {
+    height: 140px;
     position: relative;
     width: 100%;
-    transform: translate(0px, 300px);
+    transform: translate(0px, 340px);
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 376px) {
   .menu,
   .menu-respon {
     display: none;
-    background: url(./img/logo/menu.png);
+  }
+
+  .logo {
+    width: 343px;
+  }
+
+  .logo-menu {
+    display: flex;
+  }
+
+  .images-1 {
+    width: 126px;
+    height: 125px;
+    top: 127px;
+    left: 91px;
+  }
+
+  .images-2 {
+    width: 67px;
+    height: 67px;
+    top: 433px;
+    left: 63px;
+  }
+
+  .images-3 {
+    width: 133px;
+    height: 133px;
+    top: 515px;
+    left: 18px;
+  }
+
+  .images-4 {
+    width: 121px;
+    height: 121px;
+    top: 879px;
+    left: 30px;
+  }
+
+  .images-5 {
+    width: 84px;
+    height: 84px;
+    top: 837px;
+    left: 350px;
+  }
+
+  .images-6 {
+    width: 125px;
+    height: 126px;
+    top: 291px;
+    right: 30px;
+  }
+
+  .images-7 {
+    width: 95px;
+    height: 94px;
+    top: 217px;
+    left: 264px;
+  }
+
+  .images-8 {
+    width: 87px;
+    height: 88px;
+    top: 548px;
+    left: 272px;
+  }
+
+  .images-9 {
+    width: 182px;
+    height: 182px;
+    top: 636px;
+    left: 110px;
+  }
+
+  .images-10 {
+    width: 240px;
+    height: 240px;
+    top: 945px;
+    left: 127px;
+  }
+
+  .images-11 {
+    display: none;
+  }
+
+  .images-12 {
+    width: 216px;
+    height: 215px;
+    top: 319px;
+    left: 152px;
+  }
+
+  .images-13 {
+    width: 65px;
+    height: 66px;
+    top: 782px;
+    left: 11px;
+  }
+
+  .images-14 {
+    width: 127px;
+    height: 127px;
+    top: 1149px;
+    left: 24px;
+  }
+
+  .images-15 {
+    width: 88px;
+    height: 89px;
+    top: 1209px;
+    left: 222px;
+  }
+
+  footer {
+    width: 435px;
+    height: auto;
+    position: relative;
+    flex-direction: column;
+    transform: translate(0px, 920px);
+  }
+
+  .footerzim-link {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerzim-link .border {
+    border: 0;
+  }
+
+  .menu-inferior {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .menu-inferior a {
+    padding: 0px;
+  }
+
+  .menu-inferior li,
+  .menu-inferior ul,
+  .border {
+    margin: 0;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .git {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .git p {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .logo-git {
+    gap: 10px;
   }
 }
